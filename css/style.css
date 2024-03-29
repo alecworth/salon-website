@@ -1,0 +1,399 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+h1, h2, h3, h4, h5, h6, span, button, a {
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  padding: 1%;
+  height: 100%;
+}
+
+h4, li {
+  float: left;
+}
+
+header > h4 {
+  width: 10%;
+  margin: 0 3.5%;
+  font-family: 'Dancing Script', cursive;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 150%;
+}
+
+ul {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+li {
+  width: 11%;
+  text-align: center;
+  margin: 0;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 75%;
+}
+
+ul img {
+  width: 10%;
+}
+
+.icons {
+  margin: 0 -4%;
+}
+
+header ul + a {
+  width: 10%;
+  margin: 0.1% 3.5%;
+  text-align: right;
+  float: right;
+}
+
+main {
+  background-image: url(https://i.ibb.co/MZYC732/background.png);
+  background-size: 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+}
+
+.mainsection {
+  padding: 15% 7.5%;
+}
+
+.services {
+  padding-bottom: 5%;
+}
+
+.services h1 {
+  margin: 2.5% 0;
+  font-size: 450%;
+  width: 60%;
+}
+
+.services h1, .services span, .services a {
+  color: white;
+}
+
+.services span {
+  letter-spacing: 1.5px;
+}
+
+.services button {
+  display: block;
+  margin: 2.5% 0;
+  padding: 1.5%;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+
+.services button a {
+  text-decoration: none;
+}
+
+.firstvisit {
+  background-color: black;
+  color: white;
+  width: 20%;
+  height: 15%;
+  padding: 1% 0;
+}
+
+.firstvisit h4 {
+  margin: 0;
+  width: 100%;
+  font-size: 75%;
+  margin: 0;
+  padding: 10%;
+  border-left: 2px solid white;
+}
+
+.firstvisit h3 {
+  padding: 5% 10% 0 10%;
+  font-size: 90%;
+}
+
+.firstvisit em {
+  font-weight: bold;
+  font-size: 150%;
+  font-style: normal;
+}
+
+.firstvisit button {
+  display: block;
+  margin: 10% 5% 10% 10%;
+  padding: 5%;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+
+.firstvisit button a {
+  color: black;
+}
+
+.threesections section {
+  width: 33.3333%;
+  float: left;
+}
+
+.threesections section + section {
+  padding: 0 4%;
+}
+
+.threesections {
+  padding: 5%;
+}
+
+.threesections h4{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.threesections p {
+  text-align: center;
+  line-height: 2;
+}
+
+.threesections img {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.threesections section:first-child {
+  padding: 0 2.5% 0 5%;
+}
+.threesections section:last-child {
+  padding: 0 5% 0 2.5%;
+}
+
+.info {
+  background: rgb(243,244,246);
+  padding: 5% 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.infohalf {
+  width: 50%;
+  float: left;
+}
+
+.infohalf button {
+  display: block;
+  margin: 2.5% 0;
+  padding: 4% 9%;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+
+.infohalf button a {
+  text-decoration: none;
+  color: white;
+}
+
+.info img {
+  float: right;
+  width: 45%;
+}
+
+.info p {
+  padding: 2.5% 0;
+  line-height: 175%;
+}
+
+.meetUs {
+  padding: 5%;
+}
+
+.meetusImg {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.meetusCaption {
+  width: 75%;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  margin-top: -15%;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  padding: 3.5%;
+}
+
+.meetUs span {
+  font-size: 50%;
+  padding-top: 8%;
+}
+
+.meetusImg:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.meetusCaption span, .meetusCaption h4 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.offer {
+  background-image: url(https://i.imgur.com/f4s1iQt.png);
+  background-size: 100%;
+  margin: 7%;
+  padding: 5%;
+}
+
+.offer h3 {
+  font-size: 250%;
+  width: 50%;
+}
+
+.offer em {
+  font-weight: bold;
+  font-size: 125%;
+  font-style: normal;
+}
+
+.offer h5 {
+  font-size: 150%;
+  font-weight: 400;
+}
+
+.offer button {
+  display: block;
+  margin: 2.5% 0;
+  padding: 2% 4%;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+
+.offer button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.lookbook h3 {
+  text-align: center;
+  margin: .5% 0;
+}
+
+.lookbook span {
+  display: block;
+  text-align: center;
+  width: 2.5%;
+  border: 2px solid black;
+  margin: 2.5% auto;
+}
+
+.lookbook {
+  width: 100%;
+  height: 80vh;
+  padding: 0 25%;
+  margin: 0 auto;
+}
+
+.box {
+  float: left;
+  width: 30%;
+  height: 30vh;
+  margin: 1%;
+}
+
+.one {
+  height: 25vh;
+}
+
+.two {
+  height: 50vh;
+}
+
+.three {
+  height: 25vh;
+}
+
+.four {
+  clear: both;
+  height: 50vh;
+  margin-top: -24vh;
+}
+
+.five {
+  height: 24.5vh;
+}
+
+.six {
+  height: 50vh;
+  margin-top: -24vh;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
